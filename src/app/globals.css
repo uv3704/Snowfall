@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #FAFAF9;
+    --bg-surface: #FFFFFF;
+    --bg-surface-subtle: #F5F5F4;
+    --border-subtle: #E7E5E4;
+    --border-strong: #D6D3D1;
+    --text-primary: #1C1917;
+    --text-secondary: #78716C;
+    --text-muted: #A8A29E;
+    --accent: #18181B;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.011em;
+  }
+
+  code, pre, kbd, samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Structural Desktop Panels */
+.panel-border {
+  background: #FFFFFF;
+  border: 1px solid #E7E5E4;
+  border-radius: 8px;
+}
+
+/* Subtle Table Row Highlight */
+.row-interactive {
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+
+.row-interactive:hover {
+  background-color: #F5F5F4;
+}
+
+.row-selected {
+  background-color: #F5F5F4;
+}
